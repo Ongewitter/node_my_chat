@@ -14,7 +14,6 @@ export default class UsersController {
 
   @Post()
   async createUser(@Body() user: CreateUserDto) {
-    console.log('Creating user');
     return this.usersService.createUser(user);
   }
 }
